@@ -1,4 +1,4 @@
-fishtank bootleg stream
+<a href="https://fishtank.maggot.cx">fishtank bootleg stream</a>
 
 NOW UPDATING EVERY 15 MINUTES!
 
