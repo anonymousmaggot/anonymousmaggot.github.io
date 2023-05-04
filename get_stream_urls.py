@@ -5,8 +5,8 @@ import time
 import requests
 
 #googleapis
-googleapisToken = "TOKEN_HERE"
-#token not included in case Jet is actually stalking the threads to revoke them
+googleapisToken = "YOUR_TOKEN_HERE"
+#If using a paypig token this script might generate a URL for the bathroom stream. Currently it just spits out an incomplete link.
 googleapisHeaders = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0',
     'Accept': '*/*',
@@ -59,6 +59,7 @@ while True:
     for camera in data:
         camera = camera['url']
         baseURL = "https://iframe.cloudflarestream.com/{}?preload=metadata&autoplay=false&controls=true".format(camera)
-        print(baseURL)
+        print('<iframe class="embed" width="640" height="480" allowfullscreen="true" src="' + baseURL + '"></iframe>')
 
-    time.sleep(3600) #timer
+    #time.sleep(3600) #timer
+    sys.exit()
