@@ -58,7 +58,7 @@ while True:
 
     for camera in data:
         camera = camera['url']
-        baseURL = "https://iframe.cloudflarestream.com/{}?preload=metadata&autoplay=false&controls=true".format(camera)
+        baseURL = "https://iframe.cloudflarestream.com/{}?preload=metadata&autoplay=true&controls=true&muted=false".format(camera)
         print('<iframe class="embed" width="640" height="480" allowfullscreen="true" src="' + baseURL + '"></iframe>')
 
     #time.sleep(3600) #timer
